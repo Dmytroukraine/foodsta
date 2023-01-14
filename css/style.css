@@ -1,7 +1,18 @@
+:root {
+        --primary-text-color: #2C2C2C;
+        --footer-link-color: #7EB101;
+        --input-email-color:  #505050;
+        --main-bgc: #FEFEFE;
+        --secondary-bgc: #F5F5F5;
+        --main-color-hover-button: #BBF330;
+
+
+}
+
 body { 
        font-family: 'Roboto', sans-serif;
        font-style: normal;
        font-size: 16px;
-       line-height: 150%;
-       color: #2C2C2C;
-       background-color: #FEFEFE;}   
+       line-height: 1.5;
+       color: var(--primary-text-color);
+       background-color:var(--main-bgc);}   
