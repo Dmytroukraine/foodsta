@@ -1,18 +1,36 @@
-:root {
-        --primary-text-color: #2C2C2C;
+:root { --primary-text-color: #2C2C2C;
         --footer-link-color: #7EB101;
         --input-email-color:  #505050;
         --main-bgc: #FEFEFE;
         --secondary-bgc: #F5F5F5;
-        --main-color-hover-button: #BBF330;
+        --main-color-hover-button: #BBF330;}
 
+html {box-sizing: border-box;}   
 
-}
+*, 
+*::before, 
+*::after {box-sizing: inherit;}
+       
+h1, h2, h3, h4, h5, h6, p {margin: 0;}
+       
+ul {list-style-type: none;
+    padding: 0;
+    margin: 0;}  
 
-body { 
-       font-family: 'Roboto', sans-serif;
+/* conteiner */
+
+.conteiner {width: 1248px;
+            margin: 0 auto;
+            padding-left: 16px;
+            padding-right: 16px;}
+
+        /* body */
+
+body { font-family: 'Roboto', sans-serif;
        font-style: normal;
        font-size: 16px;
        line-height: 1.5;
        color: var(--primary-text-color);
-       background-color:var(--main-bgc);}   
+       background-color:var(--main-bgc);}  
+       
+     
