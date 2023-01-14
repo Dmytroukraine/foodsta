@@ -118,4 +118,7 @@ body { font-family: 'Roboto', sans-serif;
 
 /* hero */
 
+.hero {background-color:var(--secondary-bgc);}
 
+
+        
