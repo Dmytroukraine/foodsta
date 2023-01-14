@@ -31,21 +31,20 @@ ul {list-style-type: none;
 body { font-family: 'Roboto', sans-serif;
        font-style: normal;
        font-size: 16px;
-       line-height: 1.5;
+       line-height: 150%;
        color: var(--primary-text-color);
        background-color:var(--main-bgc);
     
        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);
     
        margin: auto;
-       position: relative;
        width: 1280px;}  
  
 
 /* header */
 
 
-.header {display: flex;
+.header.main{display: flex;
         width: 1280px;
         height: 72px;
         align-items: center;
@@ -118,7 +117,27 @@ body { font-family: 'Roboto', sans-serif;
 
 /* hero */
 
-.hero {background-color:var(--secondary-bgc);}
+.hero {background-color:var(--secondary-bgc);
+        display: flex;}
 
+.hero.block {display: block;}
 
+.hero.header {width: 503px;
+                height: 116px;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 1.2;
+                margin-top: 159px;
+                margin-bottom: 28px;
+                margin-left: 16px;
+                background-color:var(--secondary-bgc)}
+.hero.par {width: 502px;
+           height: 69px;
+           padding-left: 16px;}
+
+.hero.img {float: right;
+        margin-top: 40px;}  
         
+.btn.head.hero {margin-top: 40px;
+        background-color:var(--main-color-hover-button);}        
+         
