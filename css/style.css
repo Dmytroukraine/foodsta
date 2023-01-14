@@ -67,7 +67,7 @@ body { font-family: 'Roboto', sans-serif;
            align-items: center;
            text-decoration: none;}
 
-/* emphasis link */
+/* emphasis link  Як при підкресленні збільшити зону реагування посилання (padding)*/
 
 .link-item {text-decoration: none;
             padding-top: 28px;
