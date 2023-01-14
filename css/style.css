@@ -17,14 +17,14 @@ ul {list-style-type: none;
     padding: 0;
     margin: 0;}  
 
-/* conteiner */
-/* 
+/* conteiner 
+
 .conteiner {width: 1248px;
             margin: 0 auto;
             padding-left: 16px;
             padding-right: 16px;} */
 
-        /* body */
+/* body */
 
 body { font-family: 'Roboto', sans-serif;
        font-style: normal;
@@ -39,17 +39,21 @@ body { font-family: 'Roboto', sans-serif;
        position: relative;
        width: 1280px;}  
  
-       /* header */
+/* header */
 
-.header {width: 1280px;
+.header {display: flex;
+        width: 1280px;
         height: 72px;
         align-items: center;
-        text-decoration: none;}       
+        text-decoration: none;
+        background: var(--main-bgc);
+        box-shadow: 0px 4px 24px rgba(105, 105, 105, 0.1);}    
+        
+/* logo */
 
-.logo {padding-left: 16px;
-       padding-top: 10px;
-        padding-bottom: 10px;
-        margin-right: 735px;}    
+.logo { margin-left: 16px;
+        margin-right: 735px;
+        align-items: center;}    
      
 .nav .list {display: flex;
             align-items: center;
@@ -60,16 +64,29 @@ body { font-family: 'Roboto', sans-serif;
 .list .list-item + .list-item {margin-left: 28px;}
 
 .main-nav {display: flex;
-    align-items: center;
-    text-decoration: none;}
+           align-items: center;
+           text-decoration: none;}
+
+/* emphasis link */
 
 .link-item {text-decoration: none;
             padding-top: 28px;
-            padding-bottom: 28px;}  
+            margin-bottom: 28px;
+            position: relative;} 
+            
+.link-item::before {content: '';
+	                position: absolute;
+	                left: 0; bottom: -5px;
+	                width: 0;
+	                height: 1.5px;
+	                background-color: var(--main-color-hover-button);}   
+                    
+.link-item:hover:before {width: 100%;}                    
+.link-item::before {transition: width 0.35s;}
 
 .nav .list .link-item:hover, .nav .list .link-item:focus {color: var(--main-color-hover-button)}
 
-
+/* button */
 
 .btn {background-color:var(--main-color-hover-button);
       border-radius: 30px;
@@ -81,9 +98,9 @@ body { font-family: 'Roboto', sans-serif;
       font-size: 13px;}
 
 .btn.head:hover {color:var(--primary-text-color);
-                background-color: var(--main-bgc);} 
+                 background-color: var(--main-bgc);} 
                  
 .btn.head:focus {color:var(--primary-text-color);
-    background-color: var(--main-bgc);}                 
+                 background-color: var(--main-bgc);}                 
 
 .btn.head {margin-left: 30px;}      
